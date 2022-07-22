@@ -38,6 +38,10 @@ public class SortingFactory {
 			
 			algo = new RadixSort();
 			
+		}else if (sortStyle.equalsIgnoreCase("bucket")) {
+			
+			algo = new BucketSort();
+			
 		}else if (sortStyle.equalsIgnoreCase("jdk")) {
 			
 			algo = new JDK_API_Sorting();
