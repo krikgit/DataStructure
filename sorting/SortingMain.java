@@ -2,7 +2,6 @@ package self.learn.sorting;
 
 //1. Easiest way with O(n^2)
 public class SortingMain {
-
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -77,6 +76,15 @@ public class SortingMain {
 		algo.sort(mySplRadArr);
 		System.out.print("\nAfter sorting:");
 		Utility.display(mySplRadArr);
+		
+		System.out.print("\n===Applying bucket sort=== ");
+		algo = sortingStyle.getSortingPattern("bucket");
+		int [] mySplBucketArr = new int[]{54,46,83,66,95,92,43};
+		System.out.print("\nBefore sorting:");
+		Utility.display(mySplBucketArr);
+		algo.sort(mySplBucketArr);
+		System.out.print("\nAfter sorting:");
+		Utility.display(mySplBucketArr);
 		
 		
 		System.out.print("\n===Applying JDK sort method=== ");
