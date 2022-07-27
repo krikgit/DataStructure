@@ -18,10 +18,13 @@ public class HeapDemo {
 		
 		heap.printHeap();
 		
-		heap.delete(0);
-		heap.printHeap();
+		//System.out.println("Deleted:"+heap.delete(0));
+		//heap.printHeap();
 		
 		System.out.println("Peek:"+heap.peek());
+		
+		heap.sort();
+		heap.printHeap();
 		
 		
 
